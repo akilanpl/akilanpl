@@ -8,7 +8,7 @@ I am an open-source contributor to PyTorch, having identified and documented a s
 
 I led my team to win the Hexaware GenAI Designathon 2026, building an explainable anomaly-detection platform for survey data quality, and was a finalist at Smart India Hackathon 2024.
 
-I am currently seeking Software Engineering / Machine Learning Engineering internship opportunities.
+I am currently seeking Software Engineering / Machine Learning Engineering opportunities.
 
 ## 🌐 Socials
 
