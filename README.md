@@ -1,50 +1,48 @@
-# 💫 About Me
+# Akilan P L
 
-AI/ML engineering student (B.E. CSE, AI & ML) with hands-on experience building production-grade RAG systems and on-premises LLM deployments.
+**Student engineer · AI research systems · Evaluation infrastructure · Data analytics**
 
-During my internship at KONE's Enterprise Innovation Team, I designed a secure, on-prem RAG platform that reduced query latency by approximately 30% and improved retrieval relevance by approximately 40% across 100+ enterprise documents.
+I study Computer Science and Engineering with a specialization in AI and ML. My work explores how to build inspectable AI systems: represent state explicitly, evaluate outputs against defined contracts, preserve experimental evidence, and protect data integrity through reliable software.
 
-I am an open-source contributor to PyTorch, having identified and documented a serialization security vulnerability that was merged into the core repository.
+I am interested in artificial intelligence, data analytics, and scientific computing opportunities where reproducible experiments and careful engineering matter.
 
-I led my team to win the Hexaware GenAI Designathon 2026, building an explainable anomaly-detection platform for survey data quality, and was a finalist at Smart India Hackathon 2024.
+## Selected research and engineering
 
-I am currently seeking Software Engineering / Machine Learning Engineering opportunities.
+| Project | Engineering focus | Inspect the implementation |
+| --- | --- | --- |
+| [Mindscape](https://github.com/akilanpl/mindscape) | Python research system for state transitions, learned numerical claims, controlled experiments, and independently replayed trajectories. | [Execution kernel](https://github.com/akilanpl/mindscape/blob/main/src/mindscape/v3/kernel.py) · [Mathematical study](https://github.com/akilanpl/mindscape/blob/main/docs/v3_math/scientific-report.md) |
+| [Survey Data Intelligence](https://github.com/akilanpl/survey-data-intelligence) | Survey-quality workflow connecting normalized data, Parquet profiles, rules, statistics, Isolation Forest, and human investigation. | [Evidence scoring](https://github.com/akilanpl/survey-data-intelligence/blob/main/backend/app/modules/validation/fusion/scoring.py) · [ML pipeline](https://github.com/akilanpl/survey-data-intelligence/blob/main/backend/app/modules/validation/ml/engine.py) |
+| [Praxis](https://github.com/akilanpl/praxis) | Local evaluation workspace and Python runner for model outputs, executable agents, and HTTP contracts, with persisted assertions and provenance. | [Evaluation engine](https://github.com/akilanpl/praxis/blob/feature/qa-hardening-release/runner/praxis/engine.py) · [Trust boundaries](https://github.com/akilanpl/praxis/blob/feature/qa-hardening-release/docs/architecture.md) |
+| [Enterprise RAG Platform](https://github.com/akilanpl/enterprise-rag-platform) | Authenticated retrieval with tenant-aware filtering, optional reranking, and database-backed inference budget accounting. | [Request pipeline](https://github.com/akilanpl/enterprise-rag-platform/blob/main/app/orchestration/rag_pipeline.py) · [Reservation and settlement](https://github.com/akilanpl/enterprise-rag-platform/blob/main/app/core/database.py) |
+| [Hazard Zone Sentinel](https://github.com/akilanpl/CraftifAIHackathon_CRA004) | Vision-to-incident application integrating recorded PipeGen tracking metadata and a separate fresh CPU ONNX inference path. | [Zone-event processing](https://github.com/akilanpl/CraftifAIHackathon_CRA004/blob/main/backend/engine.py) · [Independent inference](https://github.com/akilanpl/CraftifAIHackathon_CRA004/blob/main/backend/independent_inference.py) |
+| [StockSense](https://github.com/akilanpl/StockSense) | PostgreSQL inventory system with transactional stock validation, a movement ledger, and concurrency regressions. | [Operation validation](https://github.com/akilanpl/StockSense/blob/main/src/server/inventory/validate-operation.ts) · [Ordered stock locks](https://github.com/akilanpl/StockSense/blob/main/src/server/inventory/stock-quant.ts) |
 
-## 🌐 Socials
+## AI and data systems
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/akilan-palaniyappan)
-[![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:akilanpalaniyappan105@gmail.com)
+My projects examine how to make results traceable to the computation and evidence that produced them.
 
-## 💻 Tech Stack
+- **Research methodology:** frozen datasets, explicit baselines, matched controls, independent replay, and interpretation of negative results in Mindscape.
+- **Applied analytics:** ingestion, profiling, anomaly evidence, classification, and investigation in Survey Data Intelligence. Its bundled evaluation data is synthetic.
+- **Evaluation infrastructure:** versioned scenarios, bounded assertions, raw outputs, configuration hashes, and comparable runs in Praxis.
+- **Reliable execution:** authorized retrieval, persistent accounting, inference provenance, and transactional database invariants across the service and application projects above.
 
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
-![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
-![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-![MLflow](https://img.shields.io/badge/mlflow-%23d9ead3.svg?style=for-the-badge&logo=mlflow&logoColor=blue)
-![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
-![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+Repository reports distinguish functional tests, recorded experiments, model-quality measurements, and deployment acceptance. Research results retain their dataset, controls, and experimental scope.
 
-## 📊 GitHub Stats
+## Open-source contributions
 
-![](https://github-readme-stats.shion.dev/api?username=akilanpl&theme=dark&hide_border=false&include_all_commits=false&count_private=false)
+I submitted [PyTorch PR #172743 — a security note on `torch.export` serialization](https://github.com/pytorch/pytorch/pull/172743), referencing the existing discussion about deserializing untrusted artifacts. The documentation proposal is **closed and unmerged**, as checked on 7 November 2026. Its scope was a source comment explaining serialization risks.
 
-![](https://streak-stats.demolab.com/?user=akilanpl&theme=dark&hide_border=false)
+The selected projects above are original repositories. Upstream forks on my account retain their original authorship and project documentation.
 
-![](https://github-readme-stats.shion.dev/api/top-langs/?username=akilanpl&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+## Engineering toolkit
 
----
+| Area | Tools used in the selected projects |
+| --- | --- |
+| Research and analytics | Python, PyTorch, NumPy, pandas, SciPy, scikit-learn, Parquet |
+| APIs and persistence | FastAPI, Pydantic, SQLAlchemy, PostgreSQL, SQLite, Qdrant, Redis |
+| Applications and inference | TypeScript, React, Next.js, ONNX Runtime |
+| Verification | pytest, unittest, Playwright, GitHub Actions, Git |
 
-[![](https://komarev.com/ghpvc/?username=akilanpl&icon=0&color=0)](https://visitcount.itsvg.in)
+## Contact
+
+[LinkedIn](https://www.linkedin.com/in/akilan-palaniyappan) · [Email](mailto:akilanpalaniyappan105@gmail.com) · [GitHub repositories](https://github.com/akilanpl?tab=repositories)
