@@ -212,6 +212,20 @@ I submitted [PyTorch PR #172743](https://github.com/pytorch/pytorch/pull/172743)
 
 ---
 
+## 🐍 Contribution Snake
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akilanpl/akilanpl/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akilanpl/akilanpl/output/github-contribution-grid-snake.svg" />
+  <img alt="Snake animation of Akilan's GitHub contributions" src="https://raw.githubusercontent.com/akilanpl/akilanpl/output/github-contribution-grid-snake.svg" />
+</picture>
+
+</div>
+
+---
+
 ## 🤝 Connect With Me
 
 <div align="center">
