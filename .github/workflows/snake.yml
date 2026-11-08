@@ -1,0 +1,54 @@
+name: Generate contribution snake
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/snake.yml']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: contribution-snake
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Generate light and dark snake animations
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+      - name: Publish animations to output branch
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        with:
+          script: |
+            const fs = require('fs');
+            const repo = context.repo;
+            const files = ['github-contribution-grid-snake.svg', 'github-contribution-grid-snake-dark.svg'];
+            const tree = await github.rest.git.createTree({
+              ...repo,
+              tree: files.map(path => ({ path, mode: '100644', type: 'blob', content: fs.readFileSync(`dist/${path}`, 'utf8') }))
+            });
+            let parent;
+            try {
+              parent = (await github.rest.git.getRef({ ...repo, ref: 'heads/output' })).data.object.sha;
+            } catch (error) {
+              if (error.status !== 404) throw error;
+            }
+            const commit = await github.rest.git.createCommit({
+              ...repo, message: 'Update contribution snake', tree: tree.data.sha, parents: parent ? [parent] : []
+            });
+            if (parent) {
+              await github.rest.git.updateRef({ ...repo, ref: 'heads/output', sha: commit.data.sha });
+            } else {
+              await github.rest.git.createRef({ ...repo, ref: 'refs/heads/output', sha: commit.data.sha });
+            }
