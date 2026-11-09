@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/interstellar-black-hole.png" alt="Interstellar-inspired black hole" width="100%">
+  <img src="./assets/interstellar-moving.gif" alt="Rotating Endurance spacecraft from the supplied Interstellar clip" width="100%">
 </p>
 
 <h1 align="center">Hi 👋, I'm Akilan</h1>
