@@ -86,9 +86,9 @@ My goal is simple: build intelligent software, test assumptions carefully, and p
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akilanpl/akilanpl/output/pacman-contribution-graph-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akilanpl/akilanpl/output/pacman-contribution-graph.svg" />
-    <img src="https://raw.githubusercontent.com/akilanpl/akilanpl/output/pacman-contribution-graph-dark.svg" alt="Akilan's Pac-Man contribution animation" width="100%" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akilanpl/akilanpl/output/pacman-contribution-graph-dark.svg?v=2" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akilanpl/akilanpl/output/pacman-contribution-graph.svg?v=2" />
+    <img src="https://raw.githubusercontent.com/akilanpl/akilanpl/output/pacman-contribution-graph-dark.svg?v=2" alt="Akilan's Pac-Man contribution animation" width="100%" />
   </picture>
 </p>
 
