@@ -76,7 +76,7 @@ I work with **Python, PyTorch, FastAPI, PostgreSQL, TypeScript, React, and Next.
 <h2 align="center">📈 Activity Graph</h2>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=akilanpl&bg_color=0D1117&color=C9D1D9&line=58A6FF&point=79C0FF&area=true&hide_border=true&radius=16" alt="Akilan's recent GitHub contribution activity" width="100%" />
+  <img src="https://raw.githubusercontent.com/akilanpl/akilanpl/output/activity-graph.svg" alt="Akilan's recent GitHub contribution activity" width="100%" />
 </p>
 
 <h2 align="center">🐍 Contribution Snake</h2>
