@@ -20,6 +20,12 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      - name: Generate Pac-Man contribution animations
+        uses: abozanona/pacman-contribution-graph@d258e3fb01511c1ff4fe6418408ede37b2ad4935 # v5.0.0
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          games: 'pacman'
+          player_style: 'opportunistic'
       - name: Generate light and dark snake animations
         uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
         with:
@@ -69,7 +75,19 @@ jobs:
           script: |
             const fs = require('fs');
             const repo = context.repo;
-            const files = ['github-contribution-grid-snake.svg', 'github-contribution-grid-snake-dark.svg', 'activity-graph.svg'];
+            for (const file of ['pacman-contribution-graph.svg', 'pacman-contribution-graph-dark.svg']) {
+              let svg = fs.readFileSync(`dist/${file}`, 'utf8');
+              const urls = [...svg.matchAll(/(?:xlink:href|href)="(https?:[^"\s]+)"/g)].map(m => m[1]);
+              for (const url of new Set(urls)) {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error(`Cannot inline image: ${response.status}`);
+                const mime = response.headers.get('content-type')?.split(';')[0] || 'image/png';
+                const data = Buffer.from(await response.arrayBuffer()).toString('base64');
+                svg = svg.split(url).join(`data:${mime};base64,${data}`);
+              }
+              fs.writeFileSync(`dist/${file}`, svg);
+            }
+            const files = ['github-contribution-grid-snake.svg', 'github-contribution-grid-snake-dark.svg', 'activity-graph.svg', 'pacman-contribution-graph.svg', 'pacman-contribution-graph-dark.svg'];
             const tree = await github.rest.git.createTree({
               ...repo,
               tree: files.map(path => ({ path, mode: '100644', type: 'blob', content: fs.readFileSync(`dist/${path}`, 'utf8') }))
