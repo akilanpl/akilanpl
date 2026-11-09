@@ -1,247 +1,105 @@
-<div align="center">
+<p align="center">
+  <img src="./assets/ai-neural-banner.png" alt="An artificial intelligence neural core rendered in terminal-inspired art" width="100%" />
+</p>
 
-# Hi 👋, I'm Akilan P L
+<h1 align="center">Hi 👋, I'm Akilan P L</h1>
+<h3 align="center">AI & ML · Research Systems · Software Engineering</h3>
 
-### AI & ML · Research Systems · Software Engineering
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=21&pause=1400&color=C9D1D9&center=true&vCenter=true&width=700&height=60&lines=%3E+Build+intelligent+systems.;%3E+Make+experiments+reproducible.;%3E+Validate+with+evidence." alt="Build intelligent systems. Make experiments reproducible. Validate with evidence." />
+</p>
 
-<p><em>Building intelligent systems with traceable results and reproducible experiments.</em></p>
+<p align="center">Exploring machine learning, inspectable AI systems, and software that makes results traceable.</p>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20My%20Work-2563EB?style=for-the-badge&logo=vercel&logoColor=white)](https://akilan-portfolio-henna.vercel.app/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Akilan%20P%20L-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/akilan-palaniyappan)
-[![ORCID](https://img.shields.io/badge/ORCID-Research%20Profile-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0000-5929-2130)
+<h2 align="center">🚀 About Me</h2>
 
-<img src="https://komarev.com/ghpvc/?username=akilanpl&label=Profile%20Views&color=2563eb&style=for-the-badge" alt="Akilan's profile views" />
+I'm **Akilan**, a Computer Science and Engineering student specializing in **Artificial Intelligence and Machine Learning**, based in India.
 
-</div>
+I build research tools and practical applications across **AI evaluation, data analytics, retrieval systems, and reliable software**. My projects focus on explicit state, reproducible experiments, and preserving the evidence behind a result.
 
----
+I work with **Python, PyTorch, FastAPI, PostgreSQL, TypeScript, React, and Next.js**. I'm interested in opportunities in AI, data analytics, and scientific computing where careful engineering matters.
 
-## 👨‍💻 About Me
+<p align="center"><b>Curiosity drives the question. Evidence shapes the answer.</b></p>
 
-```python
-akilan = {
-    "name": "Akilan P L",
-    "education": "Computer Science & Engineering (AI & ML)",
-    "location": "India",
-    "interests": [
-        "Artificial Intelligence & Machine Learning",
-        "Reproducible Research",
-        "Evaluation Infrastructure",
-        "Data Analytics & Scientific Computing",
-    ],
-    "building": "Inspectable AI systems and reliable applications",
-    "approach": "Make state explicit. Test assumptions. Preserve evidence.",
-}
-```
+<h2 align="center">🤝 Connect</h2>
 
-* 🎓 Studying **Computer Science and Engineering with a specialization in AI & ML**
-* 🧠 Exploring **AI research systems, machine learning, and applied analytics**
-* 🔬 Working with **controlled experiments, explicit baselines, and independent replay**
-* 🛠️ Building **evaluation tools, retrieval services, and data-driven applications**
-* 🌱 Interested in opportunities across **AI, data analytics, and scientific computing**
+<p align="center">
+  <a href="https://github.com/akilanpl"><img src="https://skillicons.dev/icons?i=github" height="45" alt="GitHub" /></a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/akilan-palaniyappan"><img src="https://skillicons.dev/icons?i=linkedin" height="45" alt="LinkedIn" /></a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="mailto:akilanpalaniyappan105@gmail.com"><img src="https://skillicons.dev/icons?i=gmail" height="45" alt="Email" /></a>
+</p>
+<p align="center">
+  <a href="https://akilan-portfolio-henna.vercel.app/">Portfolio</a> &nbsp;·&nbsp;
+  <a href="https://orcid.org/0009-0000-5929-2130">Research profile</a> &nbsp;·&nbsp;
+  <a href="https://github.com/akilanpl?tab=repositories">All repositories</a>
+</p>
 
----
+<h2 align="center">💻 Tech Stack</h2>
 
-## 🛠️ Tech Stack
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,ts,pytorch,sklearn,fastapi,postgres,sqlite,redis,react,nextjs,git,githubactions&perline=6" alt="Python, TypeScript, PyTorch, scikit-learn, FastAPI, PostgreSQL, SQLite, Redis, React, Next.js, Git, and GitHub Actions" />
+</p>
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" height="42" alt="NumPy" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" height="42" alt="pandas" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg" height="42" alt="SQLAlchemy" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytest/pytest-original.svg" height="42" alt="pytest" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/playwright/playwright-original.svg" height="42" alt="Playwright" />
+</p>
+<p align="center"><sub>SciPy · Parquet · Pydantic · Qdrant · ONNX Runtime · unittest</sub></p>
 
-### Languages
+<h2 align="center">🧠 Selected Work</h2>
 
-<img src="https://skillicons.dev/icons?i=python,ts" alt="Python and TypeScript" />
+| Project | What I'm exploring |
+| :--- | :--- |
+| **[Mindscape](https://github.com/akilanpl/mindscape)** | Explicit state transitions, controlled learning experiments, and independently replayable reasoning. [Study →](https://github.com/akilanpl/mindscape/blob/main/docs/v3_math/scientific-report.md) |
+| **[Survey Data Intelligence](https://github.com/akilanpl/survey-data-intelligence)** | Survey-quality analysis with Parquet profiles, validation rules, statistical checks, and Isolation Forest evidence. Bundled evaluation data is synthetic. |
+| **[Praxis](https://github.com/akilanpl/praxis)** | Local evaluation of model outputs, executable agents, and HTTP contracts, with persisted assertions and provenance. |
+| **[Enterprise RAG Platform](https://github.com/akilanpl/enterprise-rag-platform)** | Authenticated retrieval, tenant-aware filtering, optional reranking, and database-backed inference accounting. |
+| **[Hazard Zone Sentinel](https://github.com/akilanpl/CraftifAIHackathon_CRA004)** | Vision-to-incident workflows using recorded tracking metadata and a separate fresh CPU ONNX inference path. |
+| **[StockSense](https://github.com/akilanpl/StockSense)** | PostgreSQL inventory management with transactional stock validation, a movement ledger, and concurrency checks. |
 
-### AI, Research & Analytics
+<p align="center"><sub>Original projects, documented scope, and reproducible evidence. Upstream forks retain their original authorship.</sub></p>
 
-<img src="https://skillicons.dev/icons?i=pytorch,sklearn" alt="PyTorch and scikit-learn" />
+<h2 align="center">📊 GitHub Stats</h2>
 
-**NumPy · pandas · SciPy · Parquet · ONNX Runtime**
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=akilanpl&theme=city_lights&hide_border=true&border_radius=12" height="160" alt="Akilan's GitHub contribution streak" />
+</p>
 
-### Frontend & APIs
+<h2 align="center">📈 Activity Graph</h2>
 
-<img src="https://skillicons.dev/icons?i=react,nextjs,fastapi" alt="React, Next.js, and FastAPI" />
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=akilanpl&bg_color=0D1117&color=C9D1D9&line=58A6FF&point=79C0FF&area=true&hide_border=true&radius=16" alt="Akilan's recent GitHub contribution activity" width="100%" />
+</p>
 
-**Pydantic · SQLAlchemy**
+<h2 align="center">🐍 Contribution Snake</h2>
 
-### Databases & Storage
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akilanpl/akilanpl/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akilanpl/akilanpl/output/github-contribution-grid-snake.svg" />
+    <img src="https://raw.githubusercontent.com/akilanpl/akilanpl/output/github-contribution-grid-snake.svg" alt="Snake animation of Akilan's GitHub contributions" width="100%" />
+  </picture>
+</p>
 
-<img src="https://skillicons.dev/icons?i=postgres,sqlite,redis" alt="PostgreSQL, SQLite, and Redis" />
+<h2 align="center">⌘ Philosophy</h2>
 
-**Qdrant**
+<p align="center">
+  <samp>Make state explicit.<br />Test assumptions.<br />Preserve the evidence.</samp>
+</p>
 
-### Developer Tools & Verification
+<p align="center"><sub>Functional tests, recorded experiments, model-quality measurements, and deployment acceptance each tell a different part of the story.</sub></p>
 
-<img src="https://skillicons.dev/icons?i=git,github,githubactions" alt="Git, GitHub, and GitHub Actions" />
+<details>
+<summary>🌍 Open-source note</summary>
 
-**pytest · unittest · Playwright**
+I submitted [PyTorch PR #172743](https://github.com/pytorch/pytorch/pull/172743), a source-comment proposal explaining serialization risks around `torch.export` and untrusted artifacts. It was **closed without merging**, as recorded in my profile on 7 November 2026.
 
----
-
-## 🚀 Featured Projects
-
-### 🧠 [Mindscape](https://github.com/akilanpl/mindscape)
-
-**Python · Research Systems · Controlled Experiments**
-
-A research framework for explicit state transitions and independently replayable reasoning.
-
-* 🔬 Frozen datasets, explicit baselines, and matched controls
-* 🔁 Independently replayed trajectories
-* 📐 Studies of learned numerical claims with documented experimental scope
-* 📝 Interpretation of negative results alongside recorded evidence
-
-[Execution kernel](https://github.com/akilanpl/mindscape/blob/main/src/mindscape/v3/kernel.py) · [Mathematical study](https://github.com/akilanpl/mindscape/blob/main/docs/v3_math/scientific-report.md)
-
----
-
-### 📊 [Survey Data Intelligence](https://github.com/akilanpl/survey-data-intelligence)
-
-**Python · Parquet · scikit-learn · Isolation Forest**
-
-A survey-quality workflow connecting data ingestion, profiling, anomaly evidence, and human investigation.
-
-* 🧹 Normalized data and Parquet profiles
-* 📏 Validation rules and statistical checks
-* 🌲 Isolation Forest evidence for anomaly investigation
-* 🔎 Evidence scoring and classification workflows
-
-The bundled evaluation data is synthetic.
-
-[Evidence scoring](https://github.com/akilanpl/survey-data-intelligence/blob/main/backend/app/modules/validation/fusion/scoring.py) · [ML pipeline](https://github.com/akilanpl/survey-data-intelligence/blob/main/backend/app/modules/validation/ml/engine.py)
-
----
-
-### 🧪 [Praxis](https://github.com/akilanpl/praxis)
-
-**Python · Evaluation Infrastructure · HTTP Contracts**
-
-A local evaluation workspace and runner for model outputs, executable agents, and HTTP contracts.
-
-* 🗂️ Versioned scenarios and bounded assertions
-* 💾 Persisted raw outputs and provenance
-* 🔐 Configuration hashes for traceable runs
-* ⚖️ Comparable evaluations with explicit trust boundaries
-
-[Evaluation engine](https://github.com/akilanpl/praxis/blob/main/runner/praxis/engine.py) · [Architecture](https://github.com/akilanpl/praxis/blob/main/docs/architecture.md)
-
----
-
-### 🔍 [Enterprise RAG Platform](https://github.com/akilanpl/enterprise-rag-platform)
-
-**Retrieval-Augmented Generation · Authentication · Budget Accounting**
-
-An authenticated retrieval system with tenant-aware filtering and persistent inference accounting.
-
-* 🔐 Tenant-aware retrieval filters
-* 🎯 Optional reranking in the request pipeline
-* 💾 Database-backed inference budget accounting
-* 🧾 Reservation and settlement for inference usage
-
-[Request pipeline](https://github.com/akilanpl/enterprise-rag-platform/blob/main/app/orchestration/rag_pipeline.py) · [Reservation and settlement](https://github.com/akilanpl/enterprise-rag-platform/blob/main/app/core/database.py)
-
----
-
-### 🦺 [Hazard Zone Sentinel](https://github.com/akilanpl/CraftifAIHackathon_CRA004)
-
-**Computer Vision · ONNX Runtime · Incident Processing**
-
-A vision-to-incident application connecting tracking metadata with zone-event processing.
-
-* 🎥 Integration of recorded PipeGen tracking metadata
-* 🚧 Zone-event processing for incident workflows
-* ⚙️ A separate fresh CPU ONNX inference path
-* 🔎 Explicit inference provenance
-
-[Zone-event processing](https://github.com/akilanpl/CraftifAIHackathon_CRA004/blob/main/backend/engine.py) · [Independent inference](https://github.com/akilanpl/CraftifAIHackathon_CRA004/blob/main/backend/independent_inference.py)
-
----
-
-### 📦 [StockSense](https://github.com/akilanpl/StockSense)
-
-**TypeScript · PostgreSQL · Inventory Management**
-
-An inventory and warehouse system built around transactional stock updates and a movement ledger.
-
-* ✅ Transactional stock validation
-* 📒 Persistent inventory movement ledger
-* 🔒 Ordered stock locks for concurrent operations
-* 🧪 Concurrency regression checks
-
-[Operation validation](https://github.com/akilanpl/StockSense/blob/main/src/server/inventory/validate-operation.ts) · [Ordered stock locks](https://github.com/akilanpl/StockSense/blob/main/src/server/inventory/stock-quant.ts)
-
----
-
-## 🔬 How I Work
-
-| Focus | Engineering practice |
-| --- | --- |
-| Reproducibility | Preserve datasets, controls, configurations, and experimental scope. |
-| Evaluation | Keep assertions, raw outputs, and provenance alongside results. |
-| Reliability | Protect authorization boundaries, inference accounting, and database invariants. |
-| Evidence | Distinguish functional tests, recorded experiments, model-quality measurements, and deployment acceptance. |
-
-The featured projects are original repositories. Upstream forks on my account retain their original authorship and project documentation.
-
----
-
-## 🌍 Open-Source Contributions
-
-I submitted [PyTorch PR #172743](https://github.com/pytorch/pytorch/pull/172743), a source-comment proposal explaining serialization risks around `torch.export` and untrusted artifacts. The proposal was **closed without merging**, as recorded in my profile on 7 November 2026.
-
----
-
-## 📊 GitHub Analytics
-
-<div align="center">
-
-<img height="180" src="https://github-readme-stats-fast.vercel.app/api?username=akilanpl&show_icons=true&theme=github_dark&hide_border=true" alt="Akilan's public GitHub statistics" />
-<img height="180" src="https://github-readme-stats-fast.vercel.app/api/top-langs?username=akilanpl&layout=compact&theme=github_dark&hide_border=true" alt="Languages across Akilan's public GitHub repositories" />
-
-<br><br>
-
-<img src="https://streak-stats.demolab.com?user=akilanpl&theme=github-dark-blue&hide_border=true" alt="Akilan's GitHub contribution streak" />
-
-</div>
-
----
-
-## 📈 Contribution Graph
-
-<div align="center">
-
-<img src="https://ghchart.rshah.org/39d353/akilanpl" alt="Akilan's GitHub contribution chart" width="100%" />
-
-</div>
-
----
-
-## 🐍 Contribution Snake
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/akilanpl/akilanpl/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/akilanpl/akilanpl/output/github-contribution-grid-snake.svg" />
-  <img alt="Snake animation of Akilan's GitHub contributions" src="https://raw.githubusercontent.com/akilanpl/akilanpl/output/github-contribution-grid-snake.svg" />
-</picture>
-
-</div>
-
----
-
-## 🤝 Connect With Me
-
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Akilan%20P%20L-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/akilan-palaniyappan)
-[![Email](https://img.shields.io/badge/Gmail-Contact%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:akilanpalaniyappan105@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-akilanpl-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/akilanpl?tab=repositories)
-
-</div>
-
----
-
-<div align="center">
-
-### 💡 Build with curiosity. Validate with evidence.
-
-**Thanks for visiting my profile!**
-
-</div>
+</details>
