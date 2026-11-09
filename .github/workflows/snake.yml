@@ -27,13 +27,49 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-      - name: Publish animations to output branch
+      - name: Generate repository-hosted activity graph
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
+        with:
+          script: |
+            const fs = require('fs');
+            const now = new Date();
+            const from = new Date(now);
+            from.setUTCDate(from.getUTCDate() - 29);
+            from.setUTCHours(0, 0, 0, 0);
+            const result = await github.graphql(`query($login: String!, $from: DateTime!, $to: DateTime!) {
+              user(login: $login) { contributionsCollection(from: $from, to: $to) {
+                contributionCalendar { weeks { contributionDays { date contributionCount } } }
+              } }
+            }`, { login: context.repo.owner, from: from.toISOString(), to: now.toISOString() });
+            const days = result.user.contributionsCollection.contributionCalendar.weeks
+              .flatMap(w => w.contributionDays).filter(d => d.date >= from.toISOString().slice(0,10) && d.date <= now.toISOString().slice(0,10));
+            if (!days.length) throw new Error('No contribution calendar returned');
+            const max = Math.max(4, Math.ceil(Math.max(...days.map(d => d.contributionCount)) / 4) * 4);
+            const points = days.map((d, i) => `${70 + i * 870 / Math.max(1, days.length - 1)},${240 - d.contributionCount / max * 160}`);
+            let grid = '';
+            for (let i = 0; i <= 4; i++) {
+              const y = 240 - i * 40;
+              grid += `<line x1="70" y1="${y}" x2="940" y2="${y}" stroke="#21262d"/><text x="54" y="${y+4}" text-anchor="end" fill="#8b949e" font-size="12">${max*i/4}</text>`;
+            }
+            const total = days.reduce((sum,d) => sum+d.contributionCount,0);
+            const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="310" viewBox="0 0 1000 310" role="img" aria-labelledby="title desc">
+            <title id="title">Recent GitHub contribution activity</title><desc id="desc">${total} contributions from ${days[0].date} to ${days.at(-1).date}. Updated daily.</desc>
+            <rect width="1000" height="310" rx="16" fill="#0d1117"/>
+            <g font-family="Arial, sans-serif"><text x="70" y="38" fill="#c9d1d9" font-size="19" font-weight="600">Contribution activity · last 30 days</text>
+            <text x="70" y="60" fill="#8b949e" font-size="12">${total} contributions · refreshed ${now.toISOString().slice(0,10)} UTC</text>
+            ${grid}<polygon points="70,240 ${points.join(' ')} 940,240" fill="#58a6ff" opacity="0.12"/>
+            <polyline points="${points.join(' ')}" fill="none" stroke="#58a6ff" stroke-width="2.5" stroke-linejoin="round"/>
+            ${days.map((d,i) => `<circle cx="${70+i*870/Math.max(1,days.length-1)}" cy="${240-d.contributionCount/max*160}" r="3" fill="#79c0ff"><title>${d.date}: ${d.contributionCount} contributions</title></circle>`).join('')}
+            <text x="70" y="271" fill="#8b949e" font-size="12">${days[0].date}</text><text x="940" y="271" text-anchor="end" fill="#8b949e" font-size="12">${days.at(-1).date}</text></g></svg>`;
+            fs.mkdirSync('dist', { recursive: true });
+            fs.writeFileSync('dist/activity-graph.svg', svg);
+      - name: Publish profile graphics to output branch
         uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7
         with:
           script: |
             const fs = require('fs');
             const repo = context.repo;
-            const files = ['github-contribution-grid-snake.svg', 'github-contribution-grid-snake-dark.svg'];
+            const files = ['github-contribution-grid-snake.svg', 'github-contribution-grid-snake-dark.svg', 'activity-graph.svg'];
             const tree = await github.rest.git.createTree({
               ...repo,
               tree: files.map(path => ({ path, mode: '100644', type: 'blob', content: fs.readFileSync(`dist/${path}`, 'utf8') }))
@@ -45,7 +81,7 @@ jobs:
               if (error.status !== 404) throw error;
             }
             const commit = await github.rest.git.createCommit({
-              ...repo, message: 'Update contribution snake', tree: tree.data.sha, parents: parent ? [parent] : []
+              ...repo, message: 'Update contribution snake and activity graph', tree: tree.data.sha, parents: parent ? [parent] : []
             });
             if (parent) {
               await github.rest.git.updateRef({ ...repo, ref: 'heads/output', sha: commit.data.sha });
